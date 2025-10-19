@@ -36,3 +36,24 @@ cd ProjetoCadastroUsuarios
 #### 1. Crie um banco de dados vazio no PostgreSQL
 #### 2. Abra o arquivo appsettings.json e configure a ConnectionStrings com suas credenciais de acesso:
 
+```bash
+"ConnectionStrings": {
+    "DefaultConnection": "Host=localhost;Port=5432;Database=SEU_DB;Username=SEU_USUARIO;Password=SUA_SENHA"
+}
+```
+
+### 3. Aplicar as Migrações do Banco de Dados
+
+```bash
+# Aplica todas as migrações (incluindo a 'InitialPostgresCreate')
+dotnet ef database update
+```
+
+### 4. Inicializar aplicação
+```bash
+dotnet run
+```
+
+### 5. Abrir na Web
+
+A aplicação estará disponível em seu navegador (geralmente http://localhost:5000 ou https://localhost:7000).
