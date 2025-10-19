@@ -26,6 +26,18 @@
                 <input asp-for="Cliente.Email" class="form-control" />
                 <span asp-validation-for="Cliente.Email" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label asp-for="Cliente.Telefone" class="control-label"></label>
+                <input asp-for="Cliente.Telefone" class="form-control" />
+                <span asp-validation-for="Cliente.Telefone" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Cliente.Endereco" class="control-label"></label>
+                <input asp-for="Cliente.Endereco" class="form-control" />
+                <span asp-validation-for="Cliente.Endereco" class="text-danger"></span>
+            </div>
             
             <div class="form-group mt-3">
                 <input type="submit" value="Salvar" class="btn btn-primary" />

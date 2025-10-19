@@ -1,0 +1,59 @@
+@page
+@model ProjetoCadastroUsuarios.Pages.Clientes.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalhes do Cliente";
+}
+
+<h1>Detalhes do Cliente</h1>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <table class="table table-bordered table-sm">
+        <tbody>
+            
+            <tr>
+                <th scope="row" style="width: 200px;">
+                    @Html.DisplayNameFor(model => model.Cliente.Nome)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Cliente.Nome)
+                </td>
+            </tr>
+            
+            <tr>
+                <th scope="row">
+                    @Html.DisplayNameFor(model => model.Cliente.Email)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Cliente.Email)
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">
+                    @Html.DisplayNameFor(model => model.Cliente.Telefone)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Cliente.Telefone)
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">
+                    @Html.DisplayNameFor(model => model.Cliente.Endereco)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Cliente.Endereco)
+                </td>
+            </tr>
+            
+            </tbody>
+    </table>
+</div>
+
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Cliente.Id">Editar</a> |
+    <a asp-page="./Index">Voltar para a Lista</a>
+</div>
