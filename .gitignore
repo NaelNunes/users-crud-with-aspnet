@@ -1,0 +1,77 @@
+##############################
+# Arquivos e Pastas de Build #
+##############################
+
+# Diretórios de saída da compilação e binários
+[Bb]in/
+[Oo]bj/
+# bin/Debug, bin/Release, obj/
+
+# Arquivos de package restore (NuGet)
+.nuget/
+
+# Arquivos de teste
+*.trx
+
+################################
+# Visual Studio / VS Code      #
+################################
+
+# Arquivos de configurações do Visual Studio
+*.suo
+*.user
+*.useros
+*.tlb
+*.pdb
+*.ilk
+*.aps
+*.ncb
+*.bsc
+*.sbr
+*.res
+
+# Arquivos de usuário do VS Code
+.vscode/*
+# Exceto a pasta launch, que é útil para debugging (opcional: desmarque a linha abaixo se quiser versionar o launch.json)
+!.vscode/launch.json 
+
+# Pasta de caches e configurações de terceiros do VS Code
+.vs/
+.history/
+
+################################
+# ASP.NET Core E Entity Framework #
+################################
+
+# Arquivos de log e logs de teste
+*.log
+[Ll]ogs/
+
+# Arquivos de conexão e configuração local
+appsettings.Development.json # Opcional: Se você tiver dados sensíveis localmente, exclua este.
+
+# Diretório de arquivos temporários do IIS Express
+**/obj/
+**/bin/
+
+# Bases de dados SQLite (se estivesse usando, mas é bom manter)
+*.db
+*.sqlite
+*.sqlite-journal
+
+# Bancos de dados de ferramentas do EF Core/LocalDB
+*.mdf
+*.ldf
+
+################################
+# Pacotes NuGet e Ferramentas #
+################################
+
+# Pasta padrão de packages (se não estiver centralizada)
+packages/
+
+# Ferramenta dotnet local
+.config/dotnet-tools.json # Opcional, se você não quiser versionar ferramentas locais.
+
+# Arquivos de migração (IMPORTANTE: NÃO IGNORE a pasta Data/Migrations, apenas os arquivos de build dela)
+# O código C# das migrações deve ser versionado, mas os binários de build não.
