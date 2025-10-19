@@ -29,6 +29,7 @@ Para rodar este projeto, você precisa ter instalado:
 ```bash
 git clone https://github.com/NaelNunes/users-crud-with-aspnet
 cd ProjetoCadastroUsuarios
+```
 
 ### 2. Configurar Conexão com Banco de Dados
 
