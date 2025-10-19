@@ -59,14 +59,12 @@ A aplicação estará disponível em seu navegador (geralmente http://localhost:
 
 ## ✨ Funcionalidades do CRUD
 
-O acesso principal ao CRUD é feito através da URL /Clientes ou pelo link "Clientes" na barra de navegação superior (no _Layout.cshtml).
+O projeto oferece um **CRUD (Create, Read, Update, Delete)** completo para o modelo `Cliente`. O acesso principal é feito através do link "Clientes" na barra de navegação superior, que leva à página de listagem (`/Clientes`).
 
-    Create (Cadastro): Adiciona novos clientes.
-
-    Read (Listagem): Exibe todos os clientes cadastrados.
-
-    Details (Detalhes): Visualiza informações completas do cliente.
-
-    Update (Edição): Atualiza os dados de um cliente existente.
-
-    Delete (Exclusão): Remove o registro permanentemente (requer confirmação).
+| Funcionalidade | Endpoint (Padrão) | Descrição |
+| :--- | :--- | :--- |
+| **Create (Cadastro)** | `/Clientes/Create` | Formulário para adicionar novos clientes ao PostgreSQL. |
+| **Read (Listagem)** | `/Clientes` ou `/Clientes/Index` | Exibe todos os clientes cadastrados em formato de tabela. |
+| **Read (Detalhes)** | `/Clientes/Details/{id}` | Visualização em modo leitura das informações de um cliente específico. |
+| **Update (Edição)** | `/Clientes/Edit/{id}` | Permite atualizar os dados de um cliente existente e salvar no banco de dados. |
+| **Delete (Exclusão)** | `/Clientes/Delete/{id}` | Tela de confirmação para remover permanentemente um cliente do PostgreSQL. |
