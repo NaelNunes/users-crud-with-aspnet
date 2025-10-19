@@ -53,7 +53,20 @@ dotnet ef database update
 ```bash
 dotnet run
 ```
-
 ### 5. Abrir na Web
 
 A aplicação estará disponível em seu navegador (geralmente http://localhost:5000 ou https://localhost:7000).
+
+## ✨ Funcionalidades do CRUD
+
+O acesso principal ao CRUD é feito através da URL /Clientes ou pelo link "Clientes" na barra de navegação superior (no _Layout.cshtml).
+
+    Create (Cadastro): Adiciona novos clientes.
+
+    Read (Listagem): Exibe todos os clientes cadastrados.
+
+    Details (Detalhes): Visualiza informações completas do cliente.
+
+    Update (Edição): Atualiza os dados de um cliente existente.
+
+    Delete (Exclusão): Remove o registro permanentemente (requer confirmação).
